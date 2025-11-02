@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Esta es una solución simplificada. Netlify genera una API a partir de los archivos de Git.
     // Para que funcione, el repositorio en GitHub debe ser público.
     const catalogoContainer = document.getElementById('catalogo-container');
-    const user = 'lgbarcia28'; // TU USUARIO DE GITHUB
-    const repo = 'shurian-web'; // EL NOMBRE DE TU REPOSITORIO
+    const user = 'lgarcia28'; // TU USUARIO DE GITHUB
+    const repo = 'shurianweb'; // EL NOMBRE DE TU REPOSITORIO
     const path = '_productos'; // La carpeta definida en config.yml
 
     async function cargarProductos() {
