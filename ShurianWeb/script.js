@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Para que funcione, el repositorio en GitHub debe ser público.
     const catalogoContainer = document.getElementById('catalogo-container');
     const user = 'lgarcia28'; // TU USUARIO DE GITHUB
-    const repo = 'shurianweb'; // EL NOMBRE DE TU REPOSITORIO
+    const repo = 'shurian-web'; // EL NOMBRE DE TU REPOSITORIO
     const path = '_productos'; // La carpeta definida en config.yml
 
     async function cargarProductos() {
