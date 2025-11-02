@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # o master, dependiendo de tu rama principal en GitHub
+
+media_folder: "assets/uploads" # Carpeta donde se guardarán las imágenes que subas
+public_folder: "/assets/uploads" # Cómo se accederá a las imágenes desde la web
+
+collections:
+  - name: "catalogo" # Identificador de la colección
+    label: "Catálogo de Productos" # Nombre que verás en el panel
+    folder: "_productos" # Carpeta donde se guardarán los archivos de los productos
+    create: true # Permite crear nuevas entradas
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}" # Cómo se nombrará cada archivo
+    fields: # Los campos del formulario para cada producto
+      - { label: "Título del Producto", name: "title", widget: "string" }
+      - { label: "Descripción Corta", name: "description", widget: "text" }
+      - { label: "Imagen del Producto", name: "image", widget: "image" }
