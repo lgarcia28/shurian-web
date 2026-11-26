@@ -60,8 +60,22 @@
         <!-- =========== SECCIÓN DE CATÁLOGO DINÁMICA =========== -->
         <section id="catalogo">
             <h2>Nuestro Catálogo</h2>
+            <div class="catalogo-controles">
+                <input type="search" id="catalogo-buscar" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <select id="catalogo-categoria" aria-label="Filtrar por categoría">
+                    <option value="">Todas las categorías</option>
+                </select>
+                <label class="catalogo-stock-label">
+                    <input type="checkbox" id="catalogo-solo-stock" checked>
+                    Solo con stock
+                </label>
+            </div>
+            <p id="catalogo-estado" class="catalogo-estado"></p>
             <!-- El script llenará este contenedor con los productos -->
             <div class="catalogo-container" id="catalogo-container"></div>
+            <div class="catalogo-paginacion">
+                <button id="catalogo-ver-mas" class="btn-ver-mas" type="button" hidden>Ver más productos</button>
+            </div>
         </section>
         <!-- ================================================= -->
 
